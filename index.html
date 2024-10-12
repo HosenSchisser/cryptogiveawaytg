@@ -3,20 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Giveaway</title> <!-- Updated title to reflect a broader giveaway -->
+    <title>Crypto Giveaway</title>
     <link rel="icon" href="logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script charset="UTF-8" type="text/javascript" src="scripts/f909b975-4dd3-4c3d-b4e3-ac0c1e405ca0.js"></script>
+    <style>
+        /* Dark background and contrast text styles */
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        .rounded-box {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .signup-input, .interact-button {
+            width: 90%;
+            padding: 10px;
+            margin: 7px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .signup-input {
+            background-color: #2c2c2c;
+            color: #fff;
+        }
+        .interact-button {
+            background-color: #5bbb00;
+            color: white;
+            cursor: pointer;
+        }
+        .green-dot {
+            background-color: #06b800;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        /* Style for the status section */
+        .stats-section {
+            margin-top: 10px; /* Small space between heading and status */
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="text-section">
-            <h1>Crypto<br>Giveaway!</h1> <!-- Updated to be more general for different cryptocurrencies -->
-            <p>Get a chance to win 0.3 Bitcoin for Christmas!</p> <!-- Updated prize -->
+            <h1>Crypto Giveaway!</h1>
+
+            <!-- Status Section placed directly under the main heading -->
+            <div class="stats-section">
+                <div class="stats-box">
+                    <p>Status: <strong>Ongoing!</strong><span class="green-dot"></span></p>
+                </div>
+            </div>
+            
+            <p>Get a chance to win 0.3 Bitcoin for Christmas!</p>
         </div>
+
         <div class="box-section">
             <div class="rounded-box">
                 <p>Sign up to have a chance to win!</p>
@@ -26,14 +86,9 @@
                     <input type="checkbox" id="email-updates" class="styled-checkbox">
                     <label for="email-updates">Sign up to receive email updates.</label>
                 </div>
-                <button class="interact-button">Connect wallet</button>
+                
+                <button class="interact-button">Connect wallet and join the giveaway!</button>
             </div>
-        </div>
-    </div>
-
-    <div class="stats-section">
-        <div class="stats-box">
-            <p>Status: <strong>Ongoing!</strong><span class="green-dot"></span></p>
         </div>
     </div>
     </script>
