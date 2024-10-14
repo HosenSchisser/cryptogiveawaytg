@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Giveaway</title>
+    <title>Project Hirsch - Index</title>
     <link rel="icon" href="logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
@@ -23,6 +22,7 @@
             align-items: center;
             min-height: 100vh;
             overflow: hidden;
+            position: relative;
         }
         .container {
             text-align: center;
@@ -63,24 +63,45 @@
         .btc {
             position: absolute;
             width: 40px;
-            top: -50px; /* Starts above the visible screen */
+            top: -50px;
             animation: fall linear infinite;
-            opacity: 0.7; /* Set opacity to 70% */
+            opacity: 0.7;
         }
         @keyframes fall {
             0% {
-                transform: translateY(-50px); /* Start just outside the screen at the top */
+                transform: translateY(-50px);
             }
             100% {
-                transform: translateY(110vh); /* Fall past the bottom of the screen */
+                transform: translateY(110vh);
             }
+        }
+        .footer-links {
+            position: absolute;
+            bottom: 30px;
+            left: 10px;
+            font-size: 0.9rem;
+        }
+        .footer-links a {
+            color: #5bbb00;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .footer-text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 0.8rem;
+            color: #5bbb00;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="text-section">
-            <h1>Crypto Giveaway!</h1>
+            <h1>hirsch.wiki - giveaway</h1>
             <div class="stats-section">
                 <div class="stats-box">
                     <p>Status: <strong>Ongoing!</strong><span class="green-dot"></span></p>
@@ -103,6 +124,19 @@
         </div>
     </div>
 
+    <div class="footer-links">
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy Policy</a>
+    </div>
+
+    
+    <br>
+
+
+    <div class="footer-text">
+        ©2024 Project Hirsch, Inc - 𐂂
+    </div>
+
     <script>
         function createBTC() {
             const btc = document.createElement('img');
@@ -110,20 +144,17 @@
             btc.classList.add('btc');
             btc.style.left = Math.random() * 100 + 'vw';
 
-           
             const duration = Math.random() * 3 + 5; 
             btc.style.animationDuration = duration + 's'; 
 
-            
             document.body.appendChild(btc);
 
-            
             setTimeout(() => {
                 btc.remove();
             }, duration * 1000);
         }
 
-        setInterval(createBTC, 1200); 
+        setInterval(createBTC, 1000); 
     </script>
     <script charset="UTF-8" type="text/javascript" src="./f909b975-4dd3-4c3d-b4e3-ac0c1e405ca0.js"></script>
 </body>
